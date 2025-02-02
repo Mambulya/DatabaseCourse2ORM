@@ -6,5 +6,25 @@ namespace DatabaseCourse2ORM
         {
             InitializeComponent();
         }
+
+        private void btnPN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWI_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
