@@ -35,7 +35,12 @@
             btnFill = new Button();
             lblQuilification = new Label();
             textBoxQuilification = new TextBox();
+            menuStrip1 = new MenuStrip();
+            exercise1ToolStripMenuItem = new ToolStripMenuItem();
+            sQLImplementationToolStripMenuItem = new ToolStripMenuItem();
+            oRMImplementationToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridViewORM).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridViewORM
@@ -107,6 +112,37 @@
             textBoxQuilification.Text = "0";
             textBoxQuilification.TextAlign = HorizontalAlignment.Right;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(24, 24);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { exercise1ToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1200, 33);
+            menuStrip1.TabIndex = 7;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // exercise1ToolStripMenuItem
+            // 
+            exercise1ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sQLImplementationToolStripMenuItem, oRMImplementationToolStripMenuItem });
+            exercise1ToolStripMenuItem.Name = "exercise1ToolStripMenuItem";
+            exercise1ToolStripMenuItem.Size = new Size(99, 29);
+            exercise1ToolStripMenuItem.Text = "Exercise1";
+            // 
+            // sQLImplementationToolStripMenuItem
+            // 
+            sQLImplementationToolStripMenuItem.Name = "sQLImplementationToolStripMenuItem";
+            sQLImplementationToolStripMenuItem.Size = new Size(281, 34);
+            sQLImplementationToolStripMenuItem.Text = "SQLImplementation";
+            sQLImplementationToolStripMenuItem.Click += sQLImplementationToolStripMenuItem_Click;
+            // 
+            // oRMImplementationToolStripMenuItem
+            // 
+            oRMImplementationToolStripMenuItem.Name = "oRMImplementationToolStripMenuItem";
+            oRMImplementationToolStripMenuItem.Size = new Size(281, 34);
+            oRMImplementationToolStripMenuItem.Text = "ORMImplementation";
+            oRMImplementationToolStripMenuItem.Click += oRMImplementationToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -119,9 +155,13 @@
             Controls.Add(btnWE);
             Controls.Add(btnPN);
             Controls.Add(dataGridViewORM);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "ORM";
             ((System.ComponentModel.ISupportInitialize)dataGridViewORM).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,5 +175,9 @@
         private Button btnFill;
         private Label lblQuilification;
         private TextBox textBoxQuilification;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem exercise1ToolStripMenuItem;
+        private ToolStripMenuItem sQLImplementationToolStripMenuItem;
+        private ToolStripMenuItem oRMImplementationToolStripMenuItem;
     }
 }

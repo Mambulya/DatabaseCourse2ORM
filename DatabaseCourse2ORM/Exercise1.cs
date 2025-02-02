@@ -37,6 +37,20 @@ namespace DatabaseCourse2ORM
 
         private void btnFill_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var normal_defect = int.Parse(textBoxEx1.Text);
+                string sqlQuery = @"
+            SELECT wi.id_factory, we.defect_proportion
+            FROM worker_experience we
+            JOIN worker_info wi ON we.id_worker = wi.id_worker
+            WHERE we.defect_proportion >= {0}";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Введите другой тип данных");
+            }
 
         }
 

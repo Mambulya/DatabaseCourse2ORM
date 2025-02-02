@@ -58,10 +58,14 @@
             // 
             // textBoxEx1
             // 
+            textBoxEx1.ForeColor = SystemColors.ScrollBar;
             textBoxEx1.Location = new Point(320, 407);
             textBoxEx1.Name = "textBoxEx1";
+            textBoxEx1.RightToLeft = RightToLeft.No;
             textBoxEx1.Size = new Size(243, 31);
             textBoxEx1.TabIndex = 2;
+            textBoxEx1.Text = "ваш параметр";
+            textBoxEx1.TextAlign = HorizontalAlignment.Center;
             textBoxEx1.TextChanged += textBoxEx1_TextChanged;
             // 
             // btnFill
