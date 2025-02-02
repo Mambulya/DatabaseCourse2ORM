@@ -42,7 +42,7 @@
             dataGridViewORM.Location = new Point(69, 66);
             dataGridViewORM.Name = "dataGridViewORM";
             dataGridViewORM.RowHeadersWidth = 62;
-            dataGridViewORM.Size = new Size(1040, 282);
+            dataGridViewORM.Size = new Size(1040, 226);
             dataGridViewORM.TabIndex = 0;
             // 
             // btnPN
