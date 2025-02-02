@@ -11,16 +11,15 @@ using DatabaseCourse2ORM.Models;
 
 namespace DatabaseCourse2ORM
 {
-    public partial class Exercise1 : Form
+    public partial class ORM_Implementaton : Form
     {
         UniServerm1Context db = new UniServerm1Context();
-        public Exercise1()
+        public ORM_Implementaton()
         {
             InitializeComponent();
-            dataGridViewExercise1.AutoGenerateColumns = true;
         }
 
-        private void Exercise1_Load(object sender, EventArgs e)
+        private void dataGridViewExercise1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -61,12 +60,6 @@ namespace DatabaseCourse2ORM
             {
                 MessageBox.Show("Введите другой тип данных");
             }
-
-        }
-
-        private void dataGridViewExercise1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

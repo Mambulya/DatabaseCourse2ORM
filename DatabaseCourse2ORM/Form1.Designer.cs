@@ -56,7 +56,7 @@
             // 
             btnPN.Location = new Point(47, 349);
             btnPN.Name = "btnPN";
-            btnPN.Size = new Size(112, 34);
+            btnPN.Size = new Size(204, 34);
             btnPN.TabIndex = 1;
             btnPN.Text = "production_normas";
             btnPN.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // 
             // btnWE
             // 
-            btnWE.Location = new Point(541, 349);
+            btnWE.Location = new Point(492, 349);
             btnWE.Name = "btnWE";
-            btnWE.Size = new Size(112, 34);
+            btnWE.Size = new Size(240, 34);
             btnWE.TabIndex = 2;
             btnWE.Text = "worker_experience";
             btnWE.UseVisualStyleBackColor = true;
@@ -74,9 +74,9 @@
             // 
             // btnWI
             // 
-            btnWI.Location = new Point(1029, 349);
+            btnWI.Location = new Point(942, 349);
             btnWI.Name = "btnWI";
-            btnWI.Size = new Size(112, 34);
+            btnWI.Size = new Size(199, 34);
             btnWI.TabIndex = 3;
             btnWI.Text = "worker_info";
             btnWI.UseVisualStyleBackColor = true;

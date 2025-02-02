@@ -92,7 +92,8 @@ namespace DatabaseCourse2ORM
 
         private void oRMImplementationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ORM_Implementaton f2 = new ORM_Implementaton();
+            f2.ShowDialog();
         }
 
         private void sQLImplementationToolStripMenuItem_Click(object sender, EventArgs e)
