@@ -27,9 +27,16 @@ namespace DatabaseCourse2ORM
             dataGridViewORM.DataSource = db.WorkerInfos.ToList();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnFill_Click(object sender, EventArgs e)
         {
-            Close();
+            try
+            {
+                var quilification = int.Parse(textBoxQuilification.Text);
+                dataGridViewORM.DataSource = db.ProductionNormas.Where(q => q.WorkerQuilification > quilification).ToList();
+            } catch (Exception ex)
+            {
+                MessageBox.Show("¬ведите корректный тип данных!");
+            }
         }
     }
 }

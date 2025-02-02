@@ -32,22 +32,24 @@
             btnPN = new Button();
             btnWE = new Button();
             btnWI = new Button();
-            btnClose = new Button();
+            btnFill = new Button();
+            lblQuilification = new Label();
+            textBoxQuilification = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewORM).BeginInit();
             SuspendLayout();
             // 
             // dataGridViewORM
             // 
             dataGridViewORM.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewORM.Location = new Point(69, 66);
+            dataGridViewORM.Location = new Point(47, 69);
             dataGridViewORM.Name = "dataGridViewORM";
             dataGridViewORM.RowHeadersWidth = 62;
-            dataGridViewORM.Size = new Size(1040, 226);
+            dataGridViewORM.Size = new Size(1094, 226);
             dataGridViewORM.TabIndex = 0;
             // 
             // btnPN
             // 
-            btnPN.Location = new Point(121, 483);
+            btnPN.Location = new Point(47, 349);
             btnPN.Name = "btnPN";
             btnPN.Size = new Size(112, 34);
             btnPN.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             // btnWE
             // 
-            btnWE.Location = new Point(546, 483);
+            btnWE.Location = new Point(265, 349);
             btnWE.Name = "btnWE";
             btnWE.Size = new Size(112, 34);
             btnWE.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             // btnWI
             // 
-            btnWI.Location = new Point(964, 483);
+            btnWI.Location = new Point(495, 349);
             btnWI.Name = "btnWI";
             btnWI.Size = new Size(112, 34);
             btnWI.TabIndex = 3;
@@ -75,22 +77,44 @@
             btnWI.UseVisualStyleBackColor = true;
             btnWI.Click += btnWI_Click;
             // 
-            // btnClose
+            // btnFill
             // 
-            btnClose.Location = new Point(546, 596);
-            btnClose.Name = "btnClose";
-            btnClose.Size = new Size(112, 34);
-            btnClose.TabIndex = 4;
-            btnClose.Text = "close";
-            btnClose.UseVisualStyleBackColor = true;
-            btnClose.Click += btnClose_Click;
+            btnFill.ForeColor = Color.DarkGoldenrod;
+            btnFill.Location = new Point(598, 504);
+            btnFill.Name = "btnFill";
+            btnFill.Size = new Size(112, 34);
+            btnFill.TabIndex = 4;
+            btnFill.Text = "Вычислить";
+            btnFill.UseVisualStyleBackColor = true;
+            btnFill.Click += btnFill_Click;
+            // 
+            // lblQuilification
+            // 
+            lblQuilification.AutoSize = true;
+            lblQuilification.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblQuilification.Location = new Point(69, 509);
+            lblQuilification.Name = "lblQuilification";
+            lblQuilification.Size = new Size(260, 25);
+            lblQuilification.TabIndex = 5;
+            lblQuilification.Text = "Квалификация сотрудника: ";
+            // 
+            // textBoxQuilification
+            // 
+            textBoxQuilification.Location = new Point(346, 509);
+            textBoxQuilification.Name = "textBoxQuilification";
+            textBoxQuilification.Size = new Size(194, 31);
+            textBoxQuilification.TabIndex = 6;
+            textBoxQuilification.Text = "0";
+            textBoxQuilification.TextAlign = HorizontalAlignment.Right;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1200, 692);
-            Controls.Add(btnClose);
+            Controls.Add(textBoxQuilification);
+            Controls.Add(lblQuilification);
+            Controls.Add(btnFill);
             Controls.Add(btnWI);
             Controls.Add(btnWE);
             Controls.Add(btnPN);
@@ -99,6 +123,7 @@
             Text = "ORM";
             ((System.ComponentModel.ISupportInitialize)dataGridViewORM).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -107,6 +132,8 @@
         private Button btnPN;
         private Button btnWE;
         private Button btnWI;
-        private Button btnClose;
+        private Button btnFill;
+        private Label lblQuilification;
+        private TextBox textBoxQuilification;
     }
 }
