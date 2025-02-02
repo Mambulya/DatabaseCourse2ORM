@@ -70,4 +70,4 @@ namespace DatabaseCourse2ORM
         }
     }
 }
-//S
+

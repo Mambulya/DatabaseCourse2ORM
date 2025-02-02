@@ -101,5 +101,16 @@ namespace DatabaseCourse2ORM
             Exercise1 f1 = new Exercise1();
             f1.ShowDialog();
         }
+
+        private void exercise2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exercise3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Exercise3 f3 = new Exercise3(); 
+            f3.ShowDialog();
+        }
     }
 }

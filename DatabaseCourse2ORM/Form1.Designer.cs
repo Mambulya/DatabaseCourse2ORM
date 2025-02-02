@@ -39,6 +39,8 @@
             exercise1ToolStripMenuItem = new ToolStripMenuItem();
             sQLImplementationToolStripMenuItem = new ToolStripMenuItem();
             oRMImplementationToolStripMenuItem = new ToolStripMenuItem();
+            exercise2ToolStripMenuItem = new ToolStripMenuItem();
+            exercise3ToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridViewORM).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -115,7 +117,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { exercise1ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { exercise1ToolStripMenuItem, exercise2ToolStripMenuItem, exercise3ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1200, 33);
@@ -142,6 +144,20 @@
             oRMImplementationToolStripMenuItem.Size = new Size(281, 34);
             oRMImplementationToolStripMenuItem.Text = "ORMImplementation";
             oRMImplementationToolStripMenuItem.Click += oRMImplementationToolStripMenuItem_Click;
+            // 
+            // exercise2ToolStripMenuItem
+            // 
+            exercise2ToolStripMenuItem.Name = "exercise2ToolStripMenuItem";
+            exercise2ToolStripMenuItem.Size = new Size(99, 29);
+            exercise2ToolStripMenuItem.Text = "Exercise2";
+            exercise2ToolStripMenuItem.Click += exercise2ToolStripMenuItem_Click;
+            // 
+            // exercise3ToolStripMenuItem
+            // 
+            exercise3ToolStripMenuItem.Name = "exercise3ToolStripMenuItem";
+            exercise3ToolStripMenuItem.Size = new Size(99, 29);
+            exercise3ToolStripMenuItem.Text = "Exercise3";
+            exercise3ToolStripMenuItem.Click += exercise3ToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -179,5 +195,7 @@
         private ToolStripMenuItem exercise1ToolStripMenuItem;
         private ToolStripMenuItem sQLImplementationToolStripMenuItem;
         private ToolStripMenuItem oRMImplementationToolStripMenuItem;
+        private ToolStripMenuItem exercise2ToolStripMenuItem;
+        private ToolStripMenuItem exercise3ToolStripMenuItem;
     }
 }
