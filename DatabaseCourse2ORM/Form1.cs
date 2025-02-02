@@ -104,7 +104,8 @@ namespace DatabaseCourse2ORM
 
         private void exercise2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Exercise2 f2 = new Exercise2();
+            f2.ShowDialog();
         }
 
         private void exercise3ToolStripMenuItem_Click(object sender, EventArgs e)

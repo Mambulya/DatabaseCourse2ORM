@@ -16,5 +16,10 @@ namespace DatabaseCourse2ORM
         {
             InitializeComponent();
         }
+
+        private void Exercise3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

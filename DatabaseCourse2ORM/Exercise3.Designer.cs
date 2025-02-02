@@ -37,6 +37,7 @@
             ClientSize = new Size(1000, 744);
             Name = "Exercise3";
             Text = "Exercise3";
+            Load += Exercise3_Load;
             ResumeLayout(false);
         }
 
