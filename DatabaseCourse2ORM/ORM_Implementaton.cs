@@ -17,6 +17,7 @@ namespace DatabaseCourse2ORM
         public ORM_Implementaton()
         {
             InitializeComponent();
+            dataGridViewExercise1.AutoGenerateColumns = true;
         }
 
         private void dataGridViewExercise1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -35,25 +36,36 @@ namespace DatabaseCourse2ORM
         }
 
         private void btnFill_Click(object sender, EventArgs e)
-        {
+        {   
             try
             {
                 decimal normal_defect = decimal.Parse(textBoxEx1.Text);
-                var result = from we in db.WorkerExperiences
-                             join wi in db.WorkerInfos on we.IdWorker equals wi.IdWorker
-                             where we.DefectProportion <= normal_defect
-                             select new
-                             {
-                                 we.DefectProportion,
-                                 wi.IdFactory,
-                                 wi.IdDepartment,
-                                 wi.Fio,
-                                 we.FinishedWorkDate,
-                                 we.NumBadComponents
-                             };
+                List<MergedTableEx1> result = new List<MergedTableEx1>();
 
-                var data = result.ToList();
-                dataGridViewExercise1.DataSource = data;
+                var WEs = db.WorkerExperiences.ToList();
+                var WIs = db.WorkerInfos.ToList();
+
+                foreach (var exp in WEs)
+                {
+                    if (normal_defect >= exp.DefectProportion)
+                    {
+                        foreach (var inf in WIs)
+                        {
+                            if (inf.IdWorker == exp.IdWorker)
+                            {
+                                MergedTableEx1 m = new MergedTableEx1();
+                                m.IdFactory = inf.IdFactory;
+                                m.DefectProportion = exp.DefectProportion;
+                                m.IdDepartment = inf.IdDepartment;
+                                m.Fio = inf.Fio;
+                                m.FinishedWorkDate = exp.FinishedWorkDate;
+                                m.NumBadComponents = exp.NumBadComponents;
+                                result.Add(m);
+                            }
+                        }
+                    }
+                }
+                dataGridViewExercise1.DataSource = result;  
 
             }
             catch (Exception ex)
