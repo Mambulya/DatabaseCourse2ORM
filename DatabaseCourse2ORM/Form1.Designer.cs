@@ -59,7 +59,7 @@
             // 
             // btnWE
             // 
-            btnWE.Location = new Point(265, 349);
+            btnWE.Location = new Point(541, 349);
             btnWE.Name = "btnWE";
             btnWE.Size = new Size(112, 34);
             btnWE.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // btnWI
             // 
-            btnWI.Location = new Point(495, 349);
+            btnWI.Location = new Point(1029, 349);
             btnWI.Name = "btnWI";
             btnWI.Size = new Size(112, 34);
             btnWI.TabIndex = 3;
