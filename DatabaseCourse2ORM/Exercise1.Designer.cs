@@ -41,7 +41,7 @@
             dataGridViewExercise1.Location = new Point(79, 58);
             dataGridViewExercise1.Name = "dataGridViewExercise1";
             dataGridViewExercise1.RowHeadersWidth = 62;
-            dataGridViewExercise1.Size = new Size(954, 225);
+            dataGridViewExercise1.Size = new Size(919, 217);
             dataGridViewExercise1.TabIndex = 0;
             dataGridViewExercise1.CellContentClick += dataGridViewExercise1_CellContentClick;
             // 

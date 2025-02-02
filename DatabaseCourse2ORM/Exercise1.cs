@@ -39,12 +39,25 @@ namespace DatabaseCourse2ORM
         {
             try
             {
-                var normal_defect = int.Parse(textBoxEx1.Text);
-                string sqlQuery = @"
-            SELECT wi.id_factory, we.defect_proportion
-            FROM worker_experience we
-            JOIN worker_info wi ON we.id_worker = wi.id_worker
-            WHERE we.defect_proportion >= {0}";
+                decimal normal_defect = decimal.Parse(textBoxEx1.Text);
+                var result = from we in db.WorkerExperiences
+                             join wi in db.WorkerInfos on we.IdWorker equals wi.IdWorker
+                             where we.DefectProportion <= normal_defect
+                             select new
+                             {
+                                 we.DefectProportion,
+                                 wi.IdFactory,
+                                 wi.IdDepartment,
+                                 wi.Fio,
+                                 we.FinishedWorkDate,
+                                 we.NumBadComponents
+                             };
+
+                // Преобразуем результат в список
+                var data = result.ToList();
+
+                // Привязываем данные к dataGridView
+                dataGridViewExercise1.DataSource = data;
 
             }
             catch (Exception ex)
