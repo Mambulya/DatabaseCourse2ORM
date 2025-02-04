@@ -28,12 +28,25 @@ namespace DatabaseCourse2ORM
         {
             try
             {
-                int prof_parametr = int.Parse(txtProfession.Text);
+                int p_parametr = int.Parse(txtProfession.Text);
                 int q_parametr = int.Parse(txtQ.Text);
+
+                /*
+                SELECT p.id_component, p.id_operation
+                FROM production_normas p
+                WHERE p.item_time > 10
+                AND p.code_worker_profession = @p
+                AND p.worker_quilification = @q
+                AND NOT EXISTS (SELECT *
+                                FROM worker_experience we
+                                WHERE we.id_component = p.id_component
+                                AND we.id_operation = p.id_operation
+                                AND we.num_bad_components > 0);
+                */
  
                 var result = from p in db.ProductionNormas
                              where p.ItemTime > 10
-                             && p.CodeWorkerProfession == prof_parametr
+                             && p.CodeWorkerProfession == p_parametr
                              && p.WorkerQuilification == q_parametr
                              && !db.WorkerExperiences.Any(we => we.IdComponent == p.IdComponent && we.IdOperation == p.IdOperation && we.NumBadComponents > 0)
                              select new
