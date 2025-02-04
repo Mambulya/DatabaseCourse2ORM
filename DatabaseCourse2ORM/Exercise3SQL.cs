@@ -23,5 +23,15 @@ namespace DatabaseCourse2ORM
         {
 
         }
+
+        private void btnCalculate_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewEx3SQL_CellContentClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

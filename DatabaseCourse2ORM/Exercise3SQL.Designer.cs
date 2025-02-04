@@ -34,8 +34,8 @@
             label2 = new Label();
             txtQ = new TextBox();
             label3 = new Label();
-            btnCalculate = new Button();
             label4 = new Label();
+            btnCalculate = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewEx3SQL).BeginInit();
             SuspendLayout();
             // 
@@ -47,6 +47,7 @@
             dataGridViewEx3SQL.RowHeadersWidth = 62;
             dataGridViewEx3SQL.Size = new Size(796, 287);
             dataGridViewEx3SQL.TabIndex = 0;
+            dataGridViewEx3SQL.CellContentClick += this.dataGridViewEx3SQL_CellContentClick;
             // 
             // txtProfession
             // 
@@ -89,15 +90,6 @@
             label3.TabIndex = 5;
             label3.Text = "Этот рабочий при выполнении этой операции никогда не допускал брак.";
             // 
-            // btnCalculate
-            // 
-            btnCalculate.Location = new Point(557, 575);
-            btnCalculate.Name = "btnCalculate";
-            btnCalculate.Size = new Size(112, 34);
-            btnCalculate.TabIndex = 6;
-            btnCalculate.Text = "Вычислить";
-            btnCalculate.UseVisualStyleBackColor = true;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -107,6 +99,16 @@
             label4.Size = new Size(117, 25);
             label4.TabIndex = 7;
             label4.Text = "SQL-подход";
+            // 
+            // btnCalculate
+            // 
+            btnCalculate.Location = new Point(557, 575);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(112, 34);
+            btnCalculate.TabIndex = 6;
+            btnCalculate.Text = "Вычислить";
+            btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += this.btnCalculate_Click_1;
             // 
             // Exercise3SQL
             // 
@@ -137,7 +139,7 @@
         private Label label2;
         private TextBox txtQ;
         private Label label3;
-        private Button btnCalculate;
         private Label label4;
+        private Button btnCalculate;
     }
 }
