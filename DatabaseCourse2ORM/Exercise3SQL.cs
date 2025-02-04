@@ -35,7 +35,9 @@ namespace DatabaseCourse2ORM
                              where p.ItemTime > 10
                              && p.CodeWorkerProfession == prof_parametr
                              && p.WorkerQuilification == q_parametr
-                             && !db.WorkerExperiences.Any(we => we.IdComponent == p.IdComponent && we.IdOperation == p.IdOperation && we.NumBadComponents > 0)
+                             && !db.WorkerExperiences.Any(we => we.IdComponent == p.IdComponent 
+                                                            && we.IdOperation == p.IdOperation 
+                                                            && we.NumBadComponents > 0)
                              select new
                              {
                                  p.IdComponent,
