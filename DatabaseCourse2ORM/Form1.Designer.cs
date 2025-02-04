@@ -41,6 +41,11 @@
             oRMImplementationToolStripMenuItem = new ToolStripMenuItem();
             exercise2ToolStripMenuItem = new ToolStripMenuItem();
             exercise3ToolStripMenuItem = new ToolStripMenuItem();
+            exercise3ToolStripMenuItem1 = new ToolStripMenuItem();
+            sQLImplementationToolStripMenuItem2 = new ToolStripMenuItem();
+            oRMImplementationToolStripMenuItem2 = new ToolStripMenuItem();
+            sQLImplementationToolStripMenuItem1 = new ToolStripMenuItem();
+            oRMImplementationToolStripMenuItem1 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridViewORM).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -117,7 +122,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { exercise1ToolStripMenuItem, exercise2ToolStripMenuItem, exercise3ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { exercise1ToolStripMenuItem, exercise2ToolStripMenuItem, exercise3ToolStripMenuItem, exercise3ToolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1200, 33);
@@ -130,6 +135,7 @@
             exercise1ToolStripMenuItem.Name = "exercise1ToolStripMenuItem";
             exercise1ToolStripMenuItem.Size = new Size(99, 29);
             exercise1ToolStripMenuItem.Text = "Exercise1";
+            exercise1ToolStripMenuItem.Click += exercise1ToolStripMenuItem_Click;
             // 
             // sQLImplementationToolStripMenuItem
             // 
@@ -155,9 +161,40 @@
             // exercise3ToolStripMenuItem
             // 
             exercise3ToolStripMenuItem.Name = "exercise3ToolStripMenuItem";
-            exercise3ToolStripMenuItem.Size = new Size(99, 29);
-            exercise3ToolStripMenuItem.Text = "Exercise3";
-            exercise3ToolStripMenuItem.Click += exercise3ToolStripMenuItem_Click;
+            exercise3ToolStripMenuItem.Size = new Size(16, 29);
+            // 
+            // exercise3ToolStripMenuItem1
+            // 
+            exercise3ToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { sQLImplementationToolStripMenuItem2, oRMImplementationToolStripMenuItem2 });
+            exercise3ToolStripMenuItem1.Name = "exercise3ToolStripMenuItem1";
+            exercise3ToolStripMenuItem1.Size = new Size(99, 29);
+            exercise3ToolStripMenuItem1.Text = "Exercise3";
+            // 
+            // sQLImplementationToolStripMenuItem2
+            // 
+            sQLImplementationToolStripMenuItem2.Name = "sQLImplementationToolStripMenuItem2";
+            sQLImplementationToolStripMenuItem2.Size = new Size(281, 34);
+            sQLImplementationToolStripMenuItem2.Text = "SQLImplementation";
+            sQLImplementationToolStripMenuItem2.Click += sQLImplementationToolStripMenuItem2_Click;
+            // 
+            // oRMImplementationToolStripMenuItem2
+            // 
+            oRMImplementationToolStripMenuItem2.Name = "oRMImplementationToolStripMenuItem2";
+            oRMImplementationToolStripMenuItem2.Size = new Size(281, 34);
+            oRMImplementationToolStripMenuItem2.Text = "ORMImplementation";
+            oRMImplementationToolStripMenuItem2.Click += oRMImplementationToolStripMenuItem2_Click;
+            // 
+            // sQLImplementationToolStripMenuItem1
+            // 
+            sQLImplementationToolStripMenuItem1.Name = "sQLImplementationToolStripMenuItem1";
+            sQLImplementationToolStripMenuItem1.Size = new Size(32, 19);
+            // 
+            // oRMImplementationToolStripMenuItem1
+            // 
+            oRMImplementationToolStripMenuItem1.Name = "oRMImplementationToolStripMenuItem1";
+            oRMImplementationToolStripMenuItem1.Size = new Size(285, 34);
+            oRMImplementationToolStripMenuItem1.Text = "ORM implementation";
+            oRMImplementationToolStripMenuItem1.Click += oRMImplementationToolStripMenuItem1_Click;
             // 
             // Form1
             // 
@@ -197,5 +234,10 @@
         private ToolStripMenuItem oRMImplementationToolStripMenuItem;
         private ToolStripMenuItem exercise2ToolStripMenuItem;
         private ToolStripMenuItem exercise3ToolStripMenuItem;
+        private ToolStripMenuItem sQLImplementationToolStripMenuItem1;
+        private ToolStripMenuItem oRMImplementationToolStripMenuItem1;
+        private ToolStripMenuItem exercise3ToolStripMenuItem1;
+        private ToolStripMenuItem sQLImplementationToolStripMenuItem2;
+        private ToolStripMenuItem oRMImplementationToolStripMenuItem2;
     }
 }

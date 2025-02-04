@@ -108,9 +108,37 @@ namespace DatabaseCourse2ORM
             f2.ShowDialog();
         }
 
-        private void exercise3ToolStripMenuItem_Click(object sender, EventArgs e)
+
+        //private void sQLImplementationToolStripMenuItem1_Click(object sender, EventArgs e)
+        //{
+        //    Exercise3 f3 = new Exercise3();
+        //    f3.ShowDialog();
+        //}
+
+        private void oRMImplementationToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Exercise3 f3 = new Exercise3(); 
+
+        }
+
+        private void exercise1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sQLImplementationToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Exercise3SQL f3 = new Exercise3SQL();
+            f3.ShowDialog();
+        }
+
+        private void oRMImplementationToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Exercise3ORM f3 = new Exercise3ORM();
             f3.ShowDialog();
         }
     }

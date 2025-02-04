@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DatabaseCourse2ORM.Models;
 
 namespace DatabaseCourse2ORM
 {
-    public partial class Exercise3 : Form
+    public partial class Exercise3SQL : Form
     {
-        public Exercise3()
+        UniServerm1Context db = new UniServerm1Context();
+        public Exercise3SQL()
         {
             InitializeComponent();
         }

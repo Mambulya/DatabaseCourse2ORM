@@ -1,6 +1,6 @@
 ﻿namespace DatabaseCourse2ORM
 {
-    partial class Exercise3
+    partial class Exercise3ORM
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             SuspendLayout();
             // 
-            // Exercise3
+            // Exercise3ORM
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 744);
-            Name = "Exercise3";
-            Text = "Exercise3";
-            Load += Exercise3_Load;
+            ClientSize = new Size(1143, 606);
+            Name = "Exercise3ORM";
+            Text = "Exercise3ORM";
             ResumeLayout(false);
         }
 
